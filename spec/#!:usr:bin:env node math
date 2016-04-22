@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+// get argument values
+var op =  process.argv[2], // the operator for the math
+	num1 = Number(process.argv[3]), // the first operand
+	num2 = parseFloat(process.argv[4]); // the second operand
+
+if ("add" === op || "+" === op){
+	console.log(num1 + num2); // conditional expression, true or false
+}
+
+if ("subtract" === op || "-" === op){
+	console.log(num1 - num2);
+
+}
+
+//TODO: does not work with * on the command line
+if ("multiply" === op || "*" === op){
+	console.log(num1 * num2);
+}
+
+//TODO: does not work with / on the command line
+if ("divide" === op || "/" === op){
+	console.log(num1 / num2);
+}
